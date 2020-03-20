@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 2em;
+  background-color: #5e7092;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.user-list p:hover {
+  color: #2b3547;
+  background-color: #7e95c0;
+  transform: scale(1.04);
+  box-shadow: 0 0 12px rgb(0, 0, 0);
+}

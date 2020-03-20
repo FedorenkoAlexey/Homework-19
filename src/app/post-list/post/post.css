@@ -1,0 +1,20 @@
+.post-field {
+  /* position: relative; */
+  font-size: 16px;
+  list-style-type: none;
+  /* background-color: #b4bbce; */
+  margin: 16px;
+  height: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px;
+  width: 400px;
+  /* text-align: center; */
+  padding-top: 14px;
+}
+
+.post-field span {
+  color: rgb(4, 36, 83);
+  font-weight: bold;
+  font-size: 18px;
+}

@@ -1,0 +1,14 @@
+.user-field {
+  position: relative;
+  font-size: 18px;
+  list-style-type: none;
+  background-color: #b4bbce;
+  margin: 16px;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px;
+  width: 250px;
+  text-align: center;
+  padding-top: 14px;
+}
