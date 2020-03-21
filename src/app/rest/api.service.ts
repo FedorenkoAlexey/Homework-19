@@ -7,10 +7,8 @@ import { Post } from "./post/post.model";
   providedIn: "root"
 })
 export class ApiService {
-  private USER_URL = "https://jsonplaceholder.typicode.com/users";
+  public USER_URL = "https://jsonplaceholder.typicode.com/users";
   private POST_URL = "https://jsonplaceholder.typicode.com/posts?userId=";
-  users: User;
-  posts: Post;
   constructor(private http: HttpClient) {}
 
   getUsers() {

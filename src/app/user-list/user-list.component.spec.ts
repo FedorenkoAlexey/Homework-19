@@ -22,15 +22,15 @@ describe("UserListComponent", () => {
 
   it("get Users", () => {
     const apiService = jasmine.createSpyObj("UserService", ["getUsers"]);
-    const MockData = [
+    const mockData = [
       { id: 10001, name: "Jhon", username: "Smith", email: "test@mail.com" },
       { id: 10011, name: "Anna", username: "Howell", email: "test2@mail.com" }
     ] as User[];
 
-    apiService.getUsers.and.returnValue(of(MockData));
+    apiService.getUsers.and.returnValue(of(mockData));
 
     const app = new UserListComponent(apiService);
     app.getUsers();
-    expect(app.users).toEqual(MockData, "valid data");
+    expect(app.users).toEqual(mockData, "valid data");
   });
 });
