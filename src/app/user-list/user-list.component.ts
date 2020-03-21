@@ -13,7 +13,7 @@ export class UserListComponent implements OnInit {
   constructor(private api: ApiService) {}
 
   users: User[];
-  posts: Post;
+  posts: Post[];
 
   getUsers(): void {
     this.api.getUsers().subscribe((response: User[]) => {
@@ -26,7 +26,7 @@ export class UserListComponent implements OnInit {
   }
 
   getPost(id: any) {
-    this.api.getPosts(id).subscribe((posts: Post) => {
+    this.api.getPosts(id).subscribe((posts: Post[]) => {
       this.posts = posts;
     });
   }
